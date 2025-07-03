@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>좋아하는 색깔을 고르시오.</legend>
+            <p>
+                <input type="radio" name="color" id="color1" value="skyblue"/>
+                <label for="color1">skyblue</label>
+                <br/>
+                <input type="radio" name="color" id="color2" value="babypink"/>
+                <label for="color2">babypink</label>
+                <br/>   
+                <input type="radio" name="color" id="color3" value="brown"/>
+                <label for="color3">brown</label>
+                <br/>
+                <input type="radio" name="color" id="color4" value="blueblack"/>
+                <label for="color4">blueblack</label>
+                <br/>
+            </p>
+        </fieldset>
+        <br/>
+        <fieldset>
+            <legend>통합 검색</legend>
+                <div>
+                  <label for="book_name"> 도서명: &nbsp;&nbsp;</label>  
+                  <input type ="text" name = "book_search" size="50" id="book_name" />
+                  <button type="submit">검색</button>
+                  <button type="reset"> 초기화</button>
+                </div>
+
+                <div>
+                    <label> 검색범위: </label>
+                    <input type="radio" name="s_type" value="keyword" id="keyword" />
+                    <label for="keyword">키워드</label>
+                    <input type="radio" name="s_type" value="content" id="content"/>
+                    <label for="content">본문내용</label>
+                </div>
+
+                <div>
+                    <label>자료유형: </label>
+                    <input type="checkbox" name="d_type" value="all" /><label>전체</label>
+                    <input type="checkbox" name="d_type" value="book" /><label>단행본</label>
+                    <input type="checkbox" name="d_type" value="paper" /><label>학술지</label>
+                    <input type="checkbox" name="d_type" value="non_book" /><label>비도서</label>
+                </div>
+        </fieldset>
+    </form>
+    
+</body>
+</html>

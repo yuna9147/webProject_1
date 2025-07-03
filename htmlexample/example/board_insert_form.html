@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시글 작성</title>
+    <style>
+        div {
+            width: 500px;
+            margin: 10px auto;  
+        }
+        label {
+            margin-top: 10px;
+        }
+        input, textarea {
+            width: 100%;
+            padding:8px;
+            margin-top: 5px;
+        }
+        button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: 0px;
+            border-radius: 100%;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        <h2>📌게시글 등록</h2>
+
+        <form>
+           
+                <label for="user"> 작성자 </label><br/>
+                <input type="text" id="user" name="user" size="50" maxlength="30" required/>
+           
+        
+                <label for="title">제목</label><br/>
+                <input type="text" id="title" name="title" size="50" maxlength="100" required/>
+            
+            
+   
+                <label for="content">내용</label><br/>
+                <textarea id="content" name="content" rows="10" cols="50" required></textarea>
+   
+
+            <button  type="submit" style="background-color: rgb(72, 141, 245); color: rgb(255, 255, 255);" >등록</button>
+            <button type="reset" style="background-color: rgb(116, 116, 116); color: rgb(255, 255, 255);">초기화</button>
+            
+        </form>
+    </div>
+</body>
+</html>

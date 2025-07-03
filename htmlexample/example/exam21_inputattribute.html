@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개인 정보 입력</title>
+    <style> fieldset {width:400px;} </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>개인 정보 입력</legend>
+            <div>
+                <label for="name">이름</label>
+                <input type = "text" name="name" id="name"
+                        placeholder="이름을 입력하세요"
+                        required
+                        autofocus />
+            </div>
+
+            <div>
+                <label for="email">이메일</label>
+                <input type="email" name="email" id="email"
+                        placeholder="이메일을 입력하세요"
+                        required/>
+            </div>
+
+            <div>
+                <label for="phone">전화</label>
+                <input type="text" name="phone" id="phone"
+                        placeholde="전화번호를 입력하세요"
+                        required /> <!--required는 필수입력값-->
+            </div>
+
+            <div>
+                <label for="photo">파일제출</label>
+                <input type="file" name="photo" id="phot"
+                        accept="image/gif,imge/jpeg,imge/png" />
+            </div>
+
+            <div>
+                <button type="submit" >등록</button>
+                <button type="reset">초기화</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
