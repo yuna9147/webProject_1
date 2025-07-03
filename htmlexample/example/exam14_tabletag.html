@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블 태그</title>
+
+    
+    <style>
+        body{
+            margin-left: 20px;
+            margin-top: 30px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 600px;
+            text-align: center;
+        }
+        td, th {
+            border : 1px solid rgb(27, 175, 13);
+        }
+
+        caption {
+            margin-bottom: 10px;
+            caption-side:top;
+        }
+        thead{
+            background-color: #91c1ff;
+            font-weight: bold;
+        }
+   
+        tfoot{
+            background-color: #c7e1f3;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+<body>
+    <table border="1">
+        <caption> 📄주소록</caption>
+        <tr style="background-color: rgb(195, 239, 250);">
+            <td>이름</td>
+            <td>주소</td>
+            <td>📞전화번호</td>
+        </tr>
+        <tr style="background-color: rgb(237, 251, 255);">
+            <td>홍길동</td>
+            <td>서울특별시 강남구 역삼동 12-45</td>
+            <td>010-1234-0987</td>
+        </tr>
+
+        <tr style="background-color: rgb(237, 251, 255);">
+            <td>김민철</td>
+            <td>부산광역시 동구 범일1동 </td>
+            <td>010-5678-0152</td>
+        </tr>
+
+         <tr style="background-color: rgb(237, 251, 255);">
+            <td>곽두철</td>
+            <td>제주도 서귀포시 성산읍 123-49</td>
+            <td>010-1524-1157</td>
+        </tr>
+    </table>
+    <br/><br/>
+
+    <table style="background-color: rgb(230, 252, 196);">
+        <caption> 🌄산정보 </caption>
+        <tr >
+            <td>산이름</td>
+            <td>주소</td>
+            <td>📞전화번호</td>
+        </tr>
+
+        <tr>
+            <td>북한산</td>
+            <td>경기 고양시 덕양구 대서문길 375</td>
+            <td>02-909-0497</td>
+        </tr>
+
+        <tr>
+            <td>도봉산</td>
+            <td>서울특별시 도봉구 도봉동</td>
+            <td>02-954-2566</td>
+        </tr>
+
+        <tr>
+            <td>아차산</td>
+            <td>경기 구리시 아천동</td>
+            <td>02-450-1395</td>
+        </tr>
+    </table>
+<br/>
+    <hr/>
+    <h2>표 병합</h2>
+
+
+    <table>
+      <catpion> 👻 Rowspan 행 병합</catpion>
+        <tr> 
+            <td rowspan="3">아랫줄 rows 합치기</td>
+            <td>1행(row) 2열</td>
+        </tr>
+
+        <tr> 
+            <td>2행(row) 2열</td>
+        </tr>
+
+        <tr> 
+            <td>3행(row) 2열</td>
+        </tr>
+    </table>
+    <br/>
+
+
+
+    <table>
+       <catpion> 👻 Colspan 열 병합</catpion>
+        <tr>
+            <td colspan="3">옆칸(cols) 셀 합치기</td>
+        </tr>
+    
+        <tr>
+            <td>1행(row) 2열</td>
+            <td>2행(row) 2열</td>
+            <td>3행(row) 2열</td>
+        </tr>
+
+    </table>
+    <br/>
+    <h2> 표병합 연습</h2>
+
+    <table>
+    <caption> 🖥 tv편성표</caption>
+        
+        <tr style="font-weight: bold;">
+            <td>시간</td>
+            <td>ABC</td>
+            <td>BBC</td>
+            <td>CNN</td>
+        </tr>
+        
+        <tr>
+            <td><b>6pm-7pm</b></td>
+            <td rowspan="2">영화</td>
+            <td>코미디</td>
+            <td>스포츠</td>
+        </tr>
+
+        <tr>
+            <td><b>7pm-8pm</b></td>
+            <td>뉴스</td>
+            <td>시사</td>
+        </tr>
+    </table>
+    
+
+    <br/>
+
+    
+    <table>
+        <caption > ⏰ 시간표</caption>
+        <tr style="font-weight: bold;">
+            <td>요일</td>
+            <td>9am</td>
+            <td>10am</td>
+            <td>11am</td>
+            <td>12am</td>
+        </tr>
+
+        <tr>
+            <td><b>월요일</b></td>
+            <td colspan="2">영어</td>
+            <td>수학</td>
+            <td>미술</td>
+        </tr>
+        <tr>
+            <td><b>화요일</b></td>
+            <td colspan="3">역사</td>
+            <td>체육</td>
+        </tr>
+        </table>
+
+        <br/>
+
+        <hr/>
+    
+    <h2> 테이블 구조 (thead,tbody,tfoot) 확인</h2>
+    <table border="1">
+        <caption>교재 가격표🔖</caption>
+        <thead>
+            <tr style="font-weight: bold;">
+                <td>서적명</td>
+                <td>출판사</td>
+                <td>가격</td>
+                <td>기타</td>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>HTML5</td>
+                <td>미래닷컴</td>
+                <td>55,000원</td>
+                <td>360페이지</td>
+            </tr>
+
+            <tr>
+                <td>CSS3</td>
+                <td>한빛미디어</td>
+                <td>32,000원</td>
+                <td rowspan="2"></td>
+            </tr>
+
+            <tr>
+                <td>JavaScript</td>
+                <td>누리출판사</td>
+                <td>20,000원</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>합계</td>
+                <td colspan="3">107,000원</td>
+            </tr>
+        </tfoot>       
+    </table>
+
+    <br/>
+    <table>
+        <caption> 과목별 추천도서 📚 </caption>
+        <thead>
+            <tr>
+                <td>과목</td>
+                <td>책제목</td>
+                <td>저자</td>
+                <td>출판사</td>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="3">웹프로그래밍</td>
+                <td>DO it! HTML5 + CSS3 웹 표준의 정석</td>
+                <td>고경희</td>
+                <td>이지스퍼블리싱</td>
+            </tr>
+
+            <tr>
+                <td>모던 웹을 위한 JavaScript jQuery 입문</td>
+                <td>윤인성</td>
+                <td>한빛미디어</td>
+            </tr>
+
+            <tr>
+                <td>은노기의 JSP 2.3 웹 프로그래밍</td>
+                <td>김은옥</td>
+                <td>삼양미디어</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>합계</td>
+                <td colspan="3">3권</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
+
+
+
+
+
+
+
+
