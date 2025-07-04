@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영화 정보 - 하위 선택자와 자식 선택자 예제</title>
+
+    <style>
+        div#movieSection h3{  /*movieSection안에 있는 자식/자손 h3 모두에 적용*/
+            color: rgb(123, 185, 94);
+        }
+        div#recommend > h3 { /*movieSection안에서 자식인 h3에만 적용*/
+        color:orangered;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="movieSection">
+    <h3>🎥최신 영화</h3>
+    <div>
+        <h3>쥬라기 월드: 새로운 시작</h3>
+        <p>주연: 스칼릿 조핸슨, 마허샬라 알리, 조나단 베일리 | 장르 : 모험</p>
+    </div>
+    </div>
+    <hr/>
+    <div id="recommend">
+        <h3> 🎬 추천 영화</h3>
+        <div>
+            <h3>7번방의 선물 </h3>
+            <p>주연: 류승룡, 박신혜, 갈소원 | 장르 : 코미디 </p>
+        </div>
+    </div>
+</body>
+</html>

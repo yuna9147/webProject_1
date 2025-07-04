@@ -1,0 +1,18 @@
+body{
+    background-color: rgb(179, 185, 146);
+}
+
+h1{
+    font-size:48px;
+    color: rgb(194, 106, 79);
+    font-style:italic;
+}
+
+h2{
+    font-size:38px;
+    color: rgb(168, 125, 172);
+}
+
+p{
+    font-size:24px;
+}
