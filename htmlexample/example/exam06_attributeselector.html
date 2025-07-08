@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>속성 선택자 도서 목록</title>
+
+    <style>
+        fieldset{
+            width: 450px;
+            background: #ebfbff;
+        }
+        h2{
+            margin-left: 20px;
+        }
+
+        div[class^="book"] {
+            font-weight: bold;
+            margin: 10px 0;
+            color: rgb(83, 16, 146);
+        }
+    
+        a[href$=".pdf"]{
+            background: url('../image/pdf_icon.png') center right no-repeat ;
+            margin-left: 30px;
+            background-size: 20px;
+            padding-right: 25px;
+            color: crimson;
+        }
+        a[href$=".epub"]{
+            background: url('../image/epub_icon.png') center right no-repeat;
+            background-size: 20px;
+            margin-left: 30px;
+            padding-right: 25px;
+            color: rgb(6, 64, 117);
+        }
+        a[targhet="_blank"]{
+            font-style: italic;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h2>📕 도서 목록</h2>
+    <fieldset>
+    <div class="book_korean">
+        📖 자바 프로그래밍 - 박은종 저 <br/>
+    <a href= "books/java.pdf" target="_blank">PDF 다운로드 </a>
+    </div>
+
+    <div class="book_foreign">
+        📖 Clean code - Robert C. Martin 저 <br/>
+        <a href="books/clean.epub" target="_blank">EPUB 다운로드</a>
+    </div>
+
+    <div class="book_korean">
+        📖 모던 자바스크립트 & Node.js - 이창현 저 <br/>
+        <a href="books/js.pdf">PDF 다운로드</a>
+    </div>
+
+    <div class="book_foreign">
+        📖 오라클로 배우는 SQL - 이지훈 저 <br/>
+        <a href="books/sql.epub" target="_blank">EPUB 다운로드</a>
+    </div>
+    </fieldset>
+</body>
+</html>

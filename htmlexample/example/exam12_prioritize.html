@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>선택자의 우선 순위</title>
+		<style type="text/css">
+			p{
+				font-size: 25px; 
+				font-weight: bold; 
+				color:#8041D9;
+			}
+			.text{
+				font-size: 15px; 
+				font-family: 휴먼옛체,맑은고딕; 
+				color:rgb(255,0,121);
+			}
+			#font{
+				font-size: 35px; 
+				font-family: "Times New Roman","Comic Sans MS"; 
+				color:gray;
+                font-variant:small-caps;
+                line-height: 60px;
+			}
+            fieldset {
+                border-color: pink;
+                background: #fceaea;
+                width: 700px;
+                text-align: center;
+                font-weight: 500;
+                padding: 15px;
+            }
+            .bgset{
+                background-color: #e0bbff3f;
+            }
+
+		</style>
+
+	</head>
+	<body>
+		<h1>[CSS를 이용한 폰트]</h1>
+        <div>
+            선택자 우선순위<br/>
+            <fieldset> !important > 인라인 스타일시트 > 아이디 선택자 > 클래스/속성 선택자 > 태그 선택자 > 전체 선택자</fieldset>
+        </div>
+		<p class="text bgset" id="font"> Good Morning</p>  <!--배경색-->
+		<p class="text bgset">안녕하세요</p> <!--배경색-->
+		<p class="text" style="color:red; font-size:50px;">Good Morning</p>
+		<p>안녕하세요</p>
+		<span class="text" id="font">안녕하세요</span>
+	</body>
+</html>

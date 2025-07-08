@@ -1,0 +1,39 @@
+    table{
+        border-collapse: collapse;
+        width: 100%;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    tr, td{
+        padding: 8px 5px;
+        border: 1px solid rgb(170, 170, 170);
+    }
+
+    caption{
+        font-weight: 700;
+        font-size: 18px;
+        margin: 10px;
+    }
+    tr:nth-child(1){
+        font-weight: bold;
+    }
+
+    .good{ 
+        background-color: #43cbff;
+        color: white;
+        }
+
+    .soso{ 
+        background-color: #81d733;
+        color: white;
+    }
+
+    .notbad{background-color: yellow}
+
+    .bad{background-color: orange}
+
+    .worst{
+        background-color: red;
+        color: white;
+    }
