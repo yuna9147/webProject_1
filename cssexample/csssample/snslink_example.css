@@ -1,13 +1,10 @@
 body{
-    box-sizing: border-box;
     background-color: #bbf1ef;
     font-family: 'Verdana','Apple SD Gothic Neo',
                  'NanumGothic',sans-serif;
-
 }
 
 h1 {
-    box-sizing: border-box;
     width: 300px;
     border: 2px solid white;
     border-radius: 20px;
@@ -23,19 +20,17 @@ img{
     margin: 5px auto;
 }
 
-#profil {
+p#profil {
     font-weight: 600;
     font-size: 14px;
-    width:300px;
-    margin: 0 auto;
     text-align: center;
 }
 
 ul li {
     box-sizing: border-box;
     list-style-type: none;
-    margin:15px auto;
-    padding:15px;
+    margin:10px auto;
+    padding:12px;
     background-color: #ff9a9e;
     width: 300px;
     border-radius: 5px ;

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position과 z-index 속성</title>
+
+    <style>
+        .box{
+            width:100px;
+            height:100px;
+            position:absolute;
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px 1px lightgray;
+        }
+
+        .box:nth-child(1){
+            background-color: #daf5c0;
+            left:100px;
+            top:90px;
+            z-index: 1;
+        }
+
+        .box:nth-child(2){
+            background-color: #d4deff;
+            left:180px;
+            top:120px;
+            z-index: 3;
+        }
+
+        .box:nth-child(3){
+            background-color: #ffd9d9;
+            left:130px;
+            top:170px;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

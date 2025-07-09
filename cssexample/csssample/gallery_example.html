@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gallery</title>
+    <style>
+        *{
+            text-align: center;
+            box-sizing: border-box;
+        }
+        
+        body{
+            background-color: #fcf3e1;
+        }
+
+        .title{
+            font-size: 15px;
+            font-weight: 200;
+            font-style: italic;
+        }
+        .main_title{
+            font-size: 40px;
+            font-weight: 700;
+        }
+
+        .flex1{
+            
+            flex-direction: row;
+            flex-wrap: wrap;
+            display: flex;
+            gap: 90px;
+        }
+
+        figcaption{
+            text-align: left;
+            width: 300px ;
+            font-size: 20px;
+            margin: 0 20px;
+            line-height: 25px;
+        }
+        span{
+            font-size: 15px;
+            color: gray;
+        }
+
+        figure{
+            float: left;
+            padding: 5px;
+            width: 150px;
+        }
+
+        img{
+            width:300px;
+            height:300px;
+            border-radius: 15px;
+            box-shadow: 2px 2px 7px 0px black;
+            margin: 5px 10px;
+            display: block;
+        }
+
+    </style>
+</head>
+
+<body>
+        <div class="title">Recommended Gallery</div>
+        <div class="main_title">추천 갤러리</div>
+
+        <div class="flex1">
+            <figure>
+                <img src="../image/bear.jpg"/>
+                <figcaption>내 애착인형 <br/> <span>내가 3살때부터 아끼던 곰인형</span></figcaption>
+            </figure>
+
+            <figure>
+            <img src="../image/cat.gif"/>
+            <figcaption>밤이좋은 고양이 <br/> <span>항상 창가에서 별빛을 바라보는 냥이</span></figcaption>
+            </figure>
+            
+            <figure>
+            <img src="../image/photo.jpg"/>
+            <figcaption>나의 반려 식물 <br/> <span>돈도 많이 안들어요.. 물이면 ok</span></figcaption>
+            </figure>
+
+            <figure>
+            <img src="../image/guitar-bg.jpg"/>
+            <figcaption>내꿈은 기타리스트 <br/> <span>김광석 노래듣고 배우기 시작했는데..</span></figcaption>
+            </figure>
+
+</body>
+</html>
