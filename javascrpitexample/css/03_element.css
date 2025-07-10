@@ -1,0 +1,56 @@
+.area{
+    width:200px;
+    height:100px;
+    margin: 5px 5px 5px 0;
+    border: 1px solid black;
+}
+
+li{
+    margin-bottom: 8px;
+    width:200px;
+    list-style-type: none;
+    text-align: center;
+}
+
+/* 카카오톡 채팅 UI */
+#chatting-bg{
+    width:400px;
+    height:600px;
+    border: 1px solid black;
+    background-color: rgb(178,199,217);
+    overflow: auto;
+    border-radius: 5px;
+}
+
+/* 채팅내용 */
+#chatting-bg > p.center > span {
+    background-color: rgb(233, 230, 61);
+    padding:5px 10px;
+    border-radius: 5px;
+}
+
+/* 채팅 출력 라인 */
+#chatting-bg > p  {
+    margin: 20px 10px;
+    text-align: right;
+}
+#chatting-bg > p > span{
+    background-color: #8d8d8d73;
+    border-radius: 5px;
+    padding:5px 10px;
+}
+
+#chatting-bg > p.center {
+    margin: 20px 10px;
+    text-align: center;
+}
+
+#chatting-input{
+    width: 330px;
+    margin-top: 10px;
+}
+
+#chatting-input + button{
+    width:60px;
+    margin-top: 10px;
+}

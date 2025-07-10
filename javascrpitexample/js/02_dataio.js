@@ -111,9 +111,6 @@ function fnChange(){
     document.getElementById("number2").value = after;
 }
 
-function fnPrint(){
-    const input = document.getElementById("name").value.trim();
-    const show = document.getElementById("namePrint");
-
-    show.innerHTML= `당신의 이름은 '${input}'입니다.`;
+document.getElementById("btn").onclick = function(){
+    document.getElementById("namePrint").innerHTML = document.getElementById("name").value;
 }

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>성적 구하기</h3>
+
+    <input id="kor" placeholder="국어점수(kor)">
+    <input id="eng" placeholder="영어점수(eng)">
+    <input id="math" placeholder="수학점수(math)">
+    
+    <button type="button" onclick="result()">성적 구하기</button><br/>
+
+    <input id="sum" placeholder="합계" readonly>
+    <input id="avg" placeholder="평균" readonly>
+    <input id="grade" placeholder="학점" readonly>
+    <hr/>
+
+
+    <h3>숫자 맞추기 게임</h3>
+
+    숫자 : <input id="guess">
+    <button type="button" onclick="check()">확인</button><br/>
+    acd : <input id="hint"> 힌트 : <input>
+
+    <hr/>
+    <h3>간단한 반복문 실습</h3>
+    <p>
+        1. 반복문을 사용하여 h1~h6 태그로 Hello JavaScript를 출력해 주세요.<br/>
+        2. 반복문을 사용하여 이미지를 출력해 주세요.
+    </p>
+    <button type="button" onclick="printTest()">출력</button>
+    <div id = "hTag"></div>
+
+    <div id="imgTag"></div>
+
+
+    <script src="../js/controlStatement.js"></script>
+</body>
+</html>
