@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/controlStatement.css">
 </head>
 <body>
     <h3>성적 구하기</h3>
@@ -24,7 +25,8 @@
 
     숫자 : <input id="guess">
     <button type="button" onclick="check()">확인</button><br/>
-    acd : <input id="hint"> 힌트 : <input>
+    <label>시도 횟수 : </label><input id="count" readonly>  
+    <label>힌트 : </label><input id="hint" readonly>
 
     <hr/>
     <h3>간단한 반복문 실습</h3>
@@ -34,8 +36,18 @@
     </p>
     <button type="button" onclick="printTest()">출력</button>
     <div id = "hTag"></div>
-
     <div id="imgTag"></div>
+
+    <hr/>
+
+    <h3>구구단 출력</h3>
+    <!-- <button type="button" onclick="gugudan()">출력</button> -->
+    <input type="button" value="출력" onclick="gugudanPrint()" />
+    <div id="gugudan"></div>
+
+
+
+
 
 
     <script src="../js/controlStatement.js"></script>
