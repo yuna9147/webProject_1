@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form 요소 연습</title>
+    <style>
+        #input{
+            margin-right: 10px;
+            width: 250px;
+        }
+        #bgColor{
+            width: 100px;
+        }
+
+         #output{
+            width:250px;
+            height:150px;
+            border:1px solid black;
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h2>form 예제 1</h2>
+    <form id="form1">
+        <input type="text" id="input"><br/>
+        <textarea id="output" readonly></textarea>
+    </form>
+    <br/>
+
+
+     <h2>form 예제 2</h2>
+    <form id="form2">
+    <label>너비(width): </label> <input type="text" name="width" id="width"/>
+    <label>높이(height): </label> <input type="text" name="height" id="height"/>
+    <label>배경색(bgColor): </label> <input type="color" name="bgColor" id="bgColor"/><br/>
+    <label>출력할 문자열: </label> <input type="text" name="txt" id="txt"/><br/>
+    <input type="button" value="출력" name="submit" id="btn">
+
+    <div id="result"></div>
+    </form>
+
+    <script src="../js/form_example.js"></script>
+</body>
+</html>

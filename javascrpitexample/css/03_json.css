@@ -1,0 +1,27 @@
+table {
+    margin-top:20px;
+    border: 1px solid #a7a7a7;
+    border-collapse: collapse;
+    width:600px;
+}
+
+tr, th, td{
+    border: 1px solid #a7a7a7;
+    padding: 5px;text-align: center;
+}
+
+tr td:first-child{
+    text-align: left;
+    padding-left: 10px;
+}
+
+th{
+    background-color: #eee7ea;
+}
+colgroup col:nth-child(1){width:60%;}
+colgroup col:nth-child(2){width:20%; } 
+colgroup col:nth-child(3){width:20%;}
+
+input {
+    padding-left: 10px;
+}
