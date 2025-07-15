@@ -1,0 +1,21 @@
+fieldset{
+    width: 400px;
+}
+
+form div{
+    padding:10px;
+    border-bottom: 1px dotted #a3a3a3;
+}
+
+.title{
+    margin-right: 15px;
+}
+
+.btnArea{
+    text-align: center;
+    padding:5px;
+}
+
+button{
+    margin: 5px;
+}

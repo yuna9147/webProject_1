@@ -14,8 +14,6 @@
         }
 
          #output{
-            width:250px;
-            height:150px;
             border:1px solid black;
             margin-top: 10px;
         }
@@ -26,19 +24,20 @@
 
     <h2>form 예제 1</h2>
     <form id="form1">
-        <input type="text" id="input"><br/>
-        <textarea id="output" readonly></textarea>
+        <input type="text" id="input" name="input"><br/>
+        <textarea id="output" cols="33" rows="12" readonly></textarea>
     </form>
     <br/>
 
 
      <h2>form 예제 2</h2>
     <form id="form2">
-    <label>너비(width): </label> <input type="text" name="width" id="width"/>
-    <label>높이(height): </label> <input type="text" name="height" id="height"/>
-    <label>배경색(bgColor): </label> <input type="color" name="bgColor" id="bgColor"/><br/>
-    <label>출력할 문자열: </label> <input type="text" name="txt" id="txt"/><br/>
-    <input type="button" value="출력" name="submit" id="btn">
+    <label>너비(width): </label> <input type="number"  id="width"/>
+    <label>높이(height): </label> <input type="number" id="height"/>
+    <label>배경색(bgColor): </label> <input type="color" id="bgColor"/><br/>
+    <label>글씨색(Color): </label> <input type="color" id="Color"/>
+    <label>출력할 문자열: </label> <input type="text" id="txt"/><br/>
+    <input type="button" value="출력" id="btn">
 
     <div id="result"></div>
     </form>

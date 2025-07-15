@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .confirm{
+            color:green;
+        }
+        .error{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <h2>정규 표현식 예제</h2>
+
+    <h3>이름 유효성 검사</h3>
+    <h5>한글 2~5글자</h5>
+    <label for="inputName">이름 : </label>
+    <input type="text" id="inputName" /> <br />
+    <span id="inputNameResult"></span>
+    <hr />
+
+
+    <h3>아이디 유효성 검사</h3>
+    <div>
+        [아이디 입력 조건]<br/>
+        1. 입력되는 전체 길이는 5~8자이어야 한다.<br/>
+        2. 아이디는 첫글자 영문자로, 나머지 숫자와 영문자만 사용 가능하다.<br/>
+    </div>
+    <label>아이디</label>
+    <input type="text" name="mid" id="mid"/>
+    <button type="button" id="idCheck">확인</button><br/>
+    <span id="inputIdResult"></span>
+    <hr/>
+
+
+    <h3>공백 유효성 검사</h3>
+    <div>
+        [조건] <br/>
+        1. 값이 입력되지 않았을 때 "값(이름)을 입력해 주세요" 라고 메시지를 출력해 주세요.<br/>
+    </div>
+    <span>회원명</span>
+    <input type="text" name="userName" id ="userName" />
+    <button type="button" id="nameCheck">확인</button><br/>
+    <span id="msg"></span>
+    <hr/>
+
+
+    <h3>비밀번호 유효성 검사</h3>
+    <div>
+        [조건] <br/>
+        1. 영문자, 숫자, 특수문자(@, $, !, %, *, ?, &)포함하여 6~10로 입력받고자 한다.<br/>
+        2. 위의 패턴에 맞지 않으면 "유효하지 않은 비밀번호입니다."라고 출력해 주세요 <br/>
+    </div>
+    <label>비밀번호</label>
+    <input type="password" name="usesrPwd" id="userPwd"/>
+    <button type ="button" id="pwdCheck">확인</button><br/>
+    <span id ="message"></span>
+    <hr/>
+
+
+
+    <script src="../js/form_regular2.js"></script>
+</body>
+</html>

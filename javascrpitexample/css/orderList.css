@@ -1,0 +1,18 @@
+table{
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+table tr,td,th{
+    border: 1px solid black;
+    padding: 5px 10px;
+    text-align: center; 
+}
+
+[id$=Number]{
+    width: 35px;
+}
+
+[id$=Price],[id$=Total]{
+    width:100px;
+}
