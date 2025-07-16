@@ -1,0 +1,13 @@
+ul {
+    list-style:none;
+}
+
+li{
+    font-size: 20px;
+    line-height: 35px;
+}
+span {
+    color:#1b1b1b;
+    font-size: 20px;
+    margin-right:25px;
+}

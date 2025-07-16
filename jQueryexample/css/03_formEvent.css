@@ -1,0 +1,12 @@
+div{
+    margin:10px;
+}
+div label{
+    display: inline-block;
+    width: 100px;
+}
+
+.menu label {
+    display:inline;
+    width:10px;
+}
